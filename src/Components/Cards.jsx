@@ -19,7 +19,7 @@ export const Cards = () => {
           </ListGroup>
 
           <Button variant="primary" onClick={randompj}>
-            Go somewhere
+            Random Character
           </Button>
         </Card.Body>
       </Card>

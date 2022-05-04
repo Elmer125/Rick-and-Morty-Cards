@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Rick-and-Morty-Cards/static/css/main.8c2eddf8.css",
+    "main.js": "/Rick-and-Morty-Cards/static/js/main.3bc0d6ff.js",
+    "index.html": "/Rick-and-Morty-Cards/index.html",
+    "main.8c2eddf8.css.map": "/Rick-and-Morty-Cards/static/css/main.8c2eddf8.css.map",
+    "main.3bc0d6ff.js.map": "/Rick-and-Morty-Cards/static/js/main.3bc0d6ff.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8c2eddf8.css",
+    "static/js/main.3bc0d6ff.js"
+  ]
+}

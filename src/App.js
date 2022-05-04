@@ -1,22 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useContext } from "react";
+import "./App.css";
+import { Cards } from "./Components/Cards";
+import { Spinner } from "./Components/Spinner";
+import { CardContext } from "./Context/CardContext";
 
 function App() {
+  const { loading, error, result } = useContext(CardContext);
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1 className="title">Rick and Morty Cards</h1>
+        {loading ? (
+          <Spinner />
+        ) : (
+          <div>
+            {error && <p>{error.message}</p>}
+            {result && <Cards />}
+          </div>
+        )}
       </header>
     </div>
   );
